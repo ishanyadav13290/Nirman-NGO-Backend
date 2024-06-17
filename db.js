@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 
-const connection = mongoose.connect("mongodb+srv://helpmongodb:helpmongodb@cluster0.wzf4alj.mongodb.net/nirman");
+const connection = mongoose.connect(`mongodb+srv://helpmongodb:${process.env.dbPass}@cluster0.wzf4alj.mongodb.net/nirman`);
 
 
 const teamMemberSchema = mongoose.Schema({
